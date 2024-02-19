@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85">
+  <title>PDF EDITOR</title>
+
+  <!-- Link Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="menu-assets/menu-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Add this line in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="big-box">
+    <!-- <div class="preloader">
+      <img src="images/preloader.gif" alt="Loading...">
+    </div> -->
+    <div class="lake">
+      <div class="sidebar">
+        <div class="logo_details">
+          <div class="logo_name">Softhub</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+  
+  
+          <li class="heading-link">
+            <span class="link_name" style="color: black;">
+              <i class="bx"></i> <!-- Initial blank icon element -->
+              <span class="platform-text">Platform</span> <!-- Platform text -->
+            </span>
+          </li>
+  
+  
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-windows"></i>
+              <span class="link_name">Windows</span>
+            </a>
+  
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-android"></i>
+              <span class="link_name">Android</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+              <span class="link_name">Apple</span>
+            </a>
+  
+          </li>
+  
+          <hr>
+  
+          <li class="heading-link">
+            <a href="#">
+              <span class="link_name" style="color: black;">Application</span>
+            </a>
+          </li>
+   
+          <li>
+            <a href="#">
+              <i class='bx bxs-game'></i>
+              <span class="link_name">Game</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="link_name">Shield</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">utilities</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-video'></i>
+              <span class="link_name">Video</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-music'></i>
+              <span class="link_name">Music</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-shield-plus'></i>
+              <span class="link_name">Anti Virus</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxl-chrome'></i>
+              <span class="link_name">Chrome</span>
+            </a>
+          </li>
+  
+          <hr>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+  
+          </li>
+  
+        </ul>
+      </div>
+      <section class="home-section centered-zone">
+        <nav class="nav-bar">
+          <div class="hamburger">
+            <i class="bx bx-menu" id="hamburger-btn"></i>
+          </div>
+  
+  
+  
+  
+          <div class="logo">
+            <img src="images/traillogo.png" alt="">
+          </div>
+  
+  
+          <div class="search">
+            <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div>
+  
+            <ul class="platform-logo">
+              <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+            </ul>
+          </div>
+  
+          <div class="sign-in">
+            <a href="../../signin/sign-in.html" target="_blank" class="">
+              <button class="signin-button">Sign In</button>
+            </a>
+          </div>
+          <div class="open-search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </div>     
+        </nav>
+  
+        <nav class="secondary-nav">
+          <div class="new-search-container">
+            <div class="new-search-text-area">
+              <input type="text" placeholder="New Search..." id="new-search-input">
+            </div>
+            <div id="new-search-icon">
+              <button type="button"><i class="fa fa-search"></i></button>
+         </div>
+         <div id="new-close-search">
+          <button type="button" id="close-search">cancel</button>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+
+    <!-- <div class="banner">
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+
+    </div> -->
+
+   <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="app-icon/avant_browser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/bing-2.svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/chrome.svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  -->
+
+    <div class="main">
+    <div class="Container">
+      <a href="">
+        <h1 class="heading" style="cursor: default;">PDF EDITOR</h1>
+      </a>
+    </div>
+
+    <div class="download-list">
+
+      <div class="box item1">
+        <a href="chrome-link" class="app" target="_blank">
+            <img src="app-icon/Adobe_Acrobat.svg" alt="CHROME">
+            <p class="name" style="text-align: center;">Adobe Acrobat DC</p>
+            <p class="descreption">The industry standard for PDF editing with comprehensive features for professionals.</p>
+        </a>
+    </div>
+    
+    <div class="box item2">
+        <a href="firefox-link" class="app" target="_blank">
+            <img src="app-icon/nitro-pro.png" alt="firefox">
+            <p class="name" style="text-align: center;">Nitro Pro </p>
+            <p class="descreption">A powerful PDF editor with intuitive tools for creating, editing, and converting PDF files.</p>
+        </a>
+    </div>
+    
+    <div class="box item3">
+        <a href="brave-link" class="app" target="_blank">
+            <img src="app-icon/PhantomPDF by Foxit.png" alt="brave">
+            <p class="name" style="text-align: center;">Foxit Phantom PDF </p>
+            <p class="descreption">Feature-rich PDF editor offering advanced editing, security, and collaboration capabilities.</p>
+        </a>
+    </div>
+    
+    <div class="box item4">
+        <a href="chromium-link" class="app" target="_blank">
+            <img src="app-icon/pdfelement-square.svg" alt="Chromium">
+            <p class="name" style="text-align: center;">PDF element</p>
+            <p class="descreption">A versatile PDF editor with a user-friendly interface and a wide range of editing tools.</p>
+        </a>
+    </div>
+    
+    <div class="box item5">
+        <a href="ie-link" class="app" target="_blank">
+            <img src="app-icon/able.jpeg" alt="Internet Explorer">
+            <p class="name" style="text-align: center;">Able 2 Extract Professional </p>
+            <p class="descreption">Convert, edit, and create PDFs with precision using this robust editing software.</p>
+        </a>
+    </div>
+    
+    <div class="box item6">
+        <a href="k-meleon-link" class="app" target="_blank">
+            <img src="app-icon/sejda.svg" alt="K-Meleon">
+            <p class="name" style="text-align: center;">Sejda PDF Editor</p>
+            <p class="descreption">An online PDF editor offering a range of editing tools and secure document processing.</p>
+        </a>
+    </div>
+    
+    <div class="box item7">
+        <a href="gnome-link" class="app" target="_blank">
+            <img src="app-icon/smallpdf.svg" alt="GNOME">
+            <p class="name" style="text-align: center;">Smallpdf</p>
+            <p class="descreption">A simple yet effective online PDF editor with essential editing features and secure document handling.</p>
+        </a>
+    </div>
+    
+    <div class="box item8">
+        <a href="maxthon-link" class="app" target="_blank">
+            <img src="app-icon/PDF_Expert_Logo.svg" alt="Maxthon">
+            <p class="name" style="text-align: center;">PDF-XChange Editor </p>
+            <p class="descreption">Feature-packed PDF editor with advanced annotation, markup, and form-filling capabilities.</p>
+        </a>
+    </div>
+    
+    <div class="box item9">
+        <a href="uc-browser-link" class="app" target="_blank">
+            <img src="app-icon/SumatraPDF.ico" alt="UC Browser">
+            <p class="name" style="text-align: center;">Soda PDF</p>
+            <p class="descreption">A user-friendly PDF editor with editing, conversion, and collaboration features for individuals and businesses.</p>
+        </a>
+    </div>
+    
+    <div class="box item10">
+        <a href="opera-link" class="app" target="_blank">
+            <img src="app-icon/cutepdfwriter.png" alt="Opera">
+            <p class="name" style="text-align: center;">PDF Architect</p>
+            <p class="descreption">dit PDFs directly in your web browser with this convenient online editing tool.</p>
+        </a>
+    </div>
+    
+    <div class="box item11">
+        <a href="konqueror-link" class="app" target="_blank">
+            <img src="app-icon/xchange.svg" alt="Konqueror">
+            <p class="name" style="text-align: center;">PhantomPDF Online</p>
+            <p class="descreption">Edit PDFs directly in your web browser with this convenient online editing tool.
+            </p>
+        </a>
+    </div>
+    
+    <div class="box item12">
+        <a href="tor-link" class="app" target="_blank">
+            <img src="app-icon/Xchange editor.png" alt="Tor">
+            <p class="name" style="text-align: center;">Master PDF Editor</p>
+            <p class="descreption">Edit PDF documents with ease using this intuitive editor with a wide range of features.</p>
+        </a>
+    </div>
+    
+    <div class="box item13">
+        <a href="vivaldi-link" class="app" target="_blank">
+            <img src="app-icon/PDFsam_Basic_logo.svg" alt="Vivaldi">
+            <p class="name" style="text-align: center;">PDF escape </p>
+            <p class="descreption">An online PDF editor offering basic editing tools and secure document management features.</p>
+        </a>
+    </div>
+    
+    <div class="box item14">
+        <a href="waterfox-link" class="app" target="_blank">
+            <img src="app-icon/Master-PDF.png" alt="Waterfox">
+            <p class="name" style="text-align: center;">PDFsam Basic</p>
+            <p class="descreption"> Split, merge, and edit PDF files with this free and open-source PDF editor.</p>
+        </a>
+    </div>
+    
+    <div class="box item15">
+        <a href="slimbrowser-link" class="app" target="_blank">
+            <img src="app-icon/ashampoo.png" alt="SlimBrowser">
+            <p class="name" style="text-align: center;">Infix PDF Editor </p>
+            <p class="descreption">Edit text, images, and pages in PDF documents with this easy-to-use editing software.</p>
+        </a>
+    </div>
+    
+    <div class="box item16">
+        <a href="midori-link" class="app" target="_blank">
+            <img src="app-icon/candy-2.svg" alt="Midori">
+            <p class="name" style="text-align: center;">PDF Candy</p>
+            <p class="descreption">A versatile online PDF editor with editing, conversion, and document management tools.</p>
+        </a>
+    </div>
+    
+    <div class="box item17">
+        <a href="bing-link" class="app" target="_blank">
+            <img src="app-icon/PDF_Expert.svg" alt="Bing">
+            <p class="name" style="text-align: center;">PDF Expert</p>
+            <p class="descreption">Edit PDFs on Mac with this powerful editor featuring annotation, form-filling, and collaboration tools.</p>
+        </a>
+    </div>
+    
+    <div class="box item18">
+      <a href="safari-for-windows-link" class="app" target="_blank">
+          <img src="app-icon/Buddy-01.svg" alt="Safari for Windows">
+          <p class="name" style="text-align: center;">PDF Buddy</p>
+          <p class="descreption">An online PDF editor with basic editing features and secure document handling capabilities.</p>
+      </a>
+  </div>
+  
+  <div class="box item19">
+      <a href="pale-moon-link" class="app" target="_blank">
+          <img src="app-icon/LibreOffice.svg" alt="Pale Moon">
+          <p class="name" style="text-align: center;">LibreOffice Draw</p>
+          <p class="descreption">An online PDF editor with basic editing features and secure document handling capabilities.</p>
+      </a>
+  </div>
+  
+  <div class="box item20">
+      <a href="epic-browser-link" class="app" target="_blank">
+          <img src="app-icon/MOVAVI.svg" alt="Epic Browser">
+          <p class="name" style="text-align: center;">PDF24 Creator </p>
+          <p class="descreption">Create, edit, and convert PDF files with this free PDF editor and converter.</p>
+      </a>
+  </div>
+  
+  <div class="box item21">
+      <a href="avant-browser-link" class="app" target="_blank">
+          <img src="app-icon/Drawboard-Logo.svg" alt="Avant Browser">
+          <p class="name" style="text-align: center;">ApowerPDF</p>
+          <p class="descreption">A comprehensive PDF editor with editing, conversion, and OCR capabilities.</p>
+      </a>
+  </div>
+  
+  <div class="box item22">
+      <a href="sleipnir-link" class="app" target="_blank">
+          <img src="app-icon/Nitro.svg" alt="Sleipnir">
+          <p class="name" style="text-align: center;">DocHub</p>
+          <p class="descreption">An online PDF editor with annotation, signing, and collaboration features for individuals and teams.</p>
+      </a>
+  </div>
+  
+  <div class="box item23">
+      <a href="greenbrowser-link" class="app" target="_blank">
+          <img src="app-icon/CyberFOX-logo-1b.svg" alt="GreenBrowser">
+          <p class="name" style="text-align: center;">GogoPDF</p>
+          <p class="descreption">A web-based PDF editor offering basic editing tools and secure document processing.</p>
+      </a>
+  </div>
+  
+  <div class="box item24">
+      <a href="qtweb-browser-link" class="app" target="_blank">
+          <img src="app-icon/Cliqz_Icon.svg" alt="QTWeb Browser">
+          <p class="name" style="text-align: center;">PDF Reader Pro</p>
+          <p class="descreption">Edit, annotate, and convert PDF files with this feature-rich PDF editor for Mac.</p>
+      </a>
+  </div>
+  
+  <!-- <div class="box item25">
+      <a href="slimjet-link" class="app" target="_blank">
+          <img src="app-icon/slimjet.png" alt="Slimjet">
+          <p class="name" style="text-align: center;">PDF Pro </p>
+          <p class="descreption">A simple online PDF editor with basic editing features and secure document handling.</p>
+      </a>
+  </div> -->
+  
+  <div class="box item26">
+      <a href="yandex-browser-link" class="app" target="_blank">
+          <img src="app-icon/Google_Docs_logo.svg" alt="Yandex Browser">
+          <p class="name" style="text-align: center;">Drawboard PDF</p>
+          <p class="descreption">An intuitive PDF editor for Windows with annotation, markup, and collaboration tools.</p>
+      </a>
+  </div>
+  
+  <div class="box item27">
+      <a href="comodo-dragon-link" class="app" target="_blank">
+          <img src="app-icon/DocHub_Wordmark.svg" alt="Comodo Dragon">
+          <p class="name" style="text-align: center;">FormSwift </p>
+          <p class="descreption">Create, edit, and sign PDF documents with this online PDF editor and document management platform.</p>
+      </a>
+  </div>
+  
+  <div class="box item28">
+    <a href="otter-browser-link" class="app" target="_blank">
+        <img src="app-icon/PhantomPDF by Foxit.png" alt="Otter Browser">
+        <p class="name" style="text-align: center;">PDFChef by Movavi</p>
+        <p class="descreption">Edit PDFs effortlessly with this easy-to-use editor featuring a range of editing tools.</p>
+    </a>
+</div>
+  
+  <div class="box item29">
+      <a href="dooble-link" class="app" target="_blank">
+          <img src="app-icon/swift.svg" alt="Dooble">
+          <p class="name" style="text-align: center;">iSkysoft PDF Editor</p>
+          <p class="descreption">Edit, convert, and create PDF files with this versatile PDF editor for Mac and Windows.</p>
+      </a>
+  </div>
+  
+  <!-- <div class="box item30">
+      <a href="qutebrowser-link" class="app" target="_blank">
+          <img src="app-icon/Qutebrowser.svg" alt="Qutebrowser">
+          <p class="name" style="text-align: center;">PDF Candy Desktop</p>
+          <p class="descreption">Edit, convert, and merge PDF files with this desktop PDF editor offering a range of tools.</p>
+      </a>
+  </div> -->
+  
+  <!-- <div class="box item31">
+      <a href="iridium-browser-link" class="app" target="_blank">
+          <img src="app-icon/iridium.svg" alt="Iridium Browser">
+          <p class="name" style="text-align: center;">PDFedit </p>
+          <p class="descreption">A free and open-source PDF editor for Linux with basic editing and annotation features.</p>
+      </a>
+  </div> -->
+  
+  <div class="box item32">
+      <a href="falkon-link" class="app" target="_blank">
+          <img src="app-icon/Falkon.svg" alt="Falkon">
+          <p class="name" style="text-align: center;">Falkon</p>
+          <p class="descreption">Cross-platform, lightweight browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item33">
+      <a href="citrio-browser-link" class="app" target="_blank">
+          <img src="app-icon/Citrio_logo.png" alt="Citrio Browser">
+          <p class="name" style="text-align: center;">PDF Pro 10</p>
+          <p class="descreption">A feature-rich PDF editor with editing, conversion, and annotation tools for Windows users.</p>
+      </a>
+  </div>
+  
+  <div class="box item34">
+      <a href="netsurf-link" class="app" target="_blank">
+          <img src="app-icon/NetSurf-logo.svg" alt="NetSurf">
+          <p class="name" style="text-align: center;">PDFfiller </p>
+          <p class="descreption">Edit, sign, and collaborate on PDF documents with this online PDF editor and document management platform.</p>
+      </a>
+  </div>
+  
+  <div class="box item35">
+      <a href="basilisk-browser-link" class="app" target="_blank">
+          <img src="app-icon/basilisk.svg" alt="Basilisk Browser">
+          <p class="name" style="text-align: center;">PDF Shaper</p>
+          <p class="descreption">Edit and convert PDF files with this free PDF editor offering a range of tools and features.</p>
+      </a>
+  </div>
+  
+  <div class="box item36">
+      <a href="whale-browser-link" class="app" target="_blank">
+          <img src="app-icon/whale.svg" alt="Whale Browser">
+          <p class="name" style="text-align: center;">PDF Buddy Pro</p>
+          <p class="descreption">An upgraded version of PDF Buddy with advanced editing and collaboration features.</p>
+      </a>
+  </div>
+  
+
+
+
+</div> 
+   </div>
+
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="menu-assets/menu-script.js"></script>
+</div>
+</body>
+
+</html>

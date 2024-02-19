@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85">
+  <title>Browser</title>
+
+  <!-- Link Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="menu-assets/menu-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Add this line in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="big-box">
+    <div class="preloader">
+      <img src="images/preloader.gif" alt="Loading...">
+    </div>
+    <div class="lake">
+      <div class="sidebar">
+        <div class="logo_details">
+          <div class="logo_name">Softhub</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+  
+  
+          <li class="heading-link">
+            <span class="link_name" style="color: black;">
+              <i class="bx"></i> <!-- Initial blank icon element -->
+              <span class="platform-text">Platform</span> <!-- Platform text -->
+            </span>
+          </li>
+  
+  
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-windows"></i>
+              <span class="link_name">Windows</span>
+            </a>
+  
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-android"></i>
+              <span class="link_name">Android</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+              <span class="link_name">Apple</span>
+            </a>
+  
+          </li>
+  
+          <hr>
+  
+          <li class="heading-link">
+            <a href="#">
+              <span class="link_name" style="color: black;">Application</span>
+            </a>
+          </li>
+   
+          <li>
+            <a href="#">
+              <i class='bx bxs-game'></i>
+              <span class="link_name">Game</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="link_name">Shield</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">utilities</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-video'></i>
+              <span class="link_name">Video</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-music'></i>
+              <span class="link_name">Music</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-shield-plus'></i>
+              <span class="link_name">Anti Virus</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxl-chrome'></i>
+              <span class="link_name">Chrome</span>
+            </a>
+          </li>
+  
+          <hr>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+  
+          </li>
+  
+        </ul>
+      </div>
+      <section class="home-section centered-zone">
+        <nav class="nav-bar">
+          <div class="hamburger">
+            <i class="bx bx-menu" id="hamburger-btn"></i>
+          </div>
+  
+  
+  
+  
+          <div class="logo">
+            <img src="images/traillogo.png" alt="">
+          </div>
+  
+  
+          <div class="search">
+            <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div>
+  
+            <ul class="platform-logo">
+              <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+            </ul>
+          </div>
+  
+          <div class="sign-in">
+            <a href="../../signin/sign-in.html" target="_blank" class="">
+              <button class="signin-button">Sign In</button>
+            </a>
+          </div>
+          <div class="open-search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </div>     
+        </nav>
+  
+        <nav class="secondary-nav">
+          <div class="new-search-container">
+            <div class="new-search-text-area">
+              <input type="text" placeholder="New Search..." id="new-search-input">
+            </div>
+            <div id="new-search-icon">
+              <button type="button"><i class="fa fa-search"></i></button>
+         </div>
+         <div id="new-close-search">
+          <button type="button" id="close-search">cancel</button>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+
+    <!-- <div class="banner">
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+
+    </div> -->
+
+   <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="app-icon/avant_browser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/bing-2.svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/chrome.svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  -->
+
+    <div class="main">
+    <div class="Container">
+      <a href="">
+        <h1 class="heading" style="cursor: default;">BROWSER ></h1>
+      </a>
+    </div>
+
+    <div class="download-list">
+
+      <div class="box item1">
+        <a href="chrome-link" class="app" target="_blank">
+            <img src="app-icon/chrome.svg" alt="CHROME">
+            <p class="name" style="text-align: center;">CHROME</p>
+            <p class="descreption">Fast, Secure Web Browsing Platform</p>
+        </a>
+    </div>
+    
+    <div class="box item2">
+        <a href="firefox-link" class="app" target="_blank">
+            <img src="app-icon/firefox.svg" alt="firefox">
+            <p class="name" style="text-align: center;">firefox</p>
+            <p class="descreption">Open-Source Browser with Privacy Emphasis</p>
+        </a>
+    </div>
+    
+    <div class="box item3">
+        <a href="brave-link" class="app" target="_blank">
+            <img src="app-icon/brave.svg" alt="brave">
+            <p class="name" style="text-align: center;">brave</p>
+            <p class="descreption">Privacy-Focused Browser with Rewards</p>
+        </a>
+    </div>
+    
+    <div class="box item4">
+        <a href="chromium-link" class="app" target="_blank">
+            <img src="app-icon/chromium.svg" alt="Chromium">
+            <p class="name" style="text-align: center;">Chromium Browser</p>
+            <p class="descreption">Open-Source Project Basis for Chrome</p>
+        </a>
+    </div>
+    
+    <div class="box item5">
+        <a href="ie-link" class="app" target="_blank">
+            <img src="app-icon/internet-explorer.svg" alt="Internet Explorer">
+            <p class="name" style="text-align: center;">Internet Explorer</p>
+            <p class="descreption">Legacy Microsoft Web Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item6">
+        <a href="k-meleon-link" class="app" target="_blank">
+            <img src="app-icon/k-meleon.svg" alt="K-Meleon">
+            <p class="name" style="text-align: center;">K-Meleon Browser</p>
+            <p class="descreption">Lightweight and Customizable Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item7">
+        <a href="gnome-link" class="app" target="_blank">
+            <img src="app-icon/GNOME.svg" alt="GNOME">
+            <p class="name" style="text-align: center;">GNOME Browser</p>
+            <p class="descreption">GNOME Desktop Environment's Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item8">
+        <a href="maxthon-link" class="app" target="_blank">
+            <img src="app-icon/maxthonlogo.svg" alt="Maxthon">
+            <p class="name" style="text-align: center;">Maxthon Browser</p>
+            <p class="descreption">Cloud-Powered Browser with Features</p>
+        </a>
+    </div>
+    
+    <div class="box item9">
+        <a href="uc-browser-link" class="app" target="_blank">
+            <img src="app-icon/UC-Browser.svg" alt="UC Browser">
+            <p class="name" style="text-align: center;">UC Browser</p>
+            <p class="descreption">Fast and Feature-Rich Mobile Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item10">
+        <a href="opera-link" class="app" target="_blank">
+            <img src="app-icon/opera-2.svg" alt="Opera">
+            <p class="name" style="text-align: center;">Opera Browser</p>
+            <p class="descreption">Innovative Browser with Built-in Tools</p>
+        </a>
+    </div>
+    
+    <div class="box item11">
+        <a href="konqueror-link" class="app" target="_blank">
+            <img src="app-icon/konqueror.svg" alt="Konqueror">
+            <p class="name" style="text-align: center;">Konqueror Browser</p>
+            <p class="descreption">KDE's Integrated Web Browser/File Manager</p>
+        </a>
+    </div>
+    
+    <div class="box item12">
+        <a href="tor-link" class="app" target="_blank">
+            <img src="app-icon/tor-1.svg" alt="Tor">
+            <p class="name" style="text-align: center;">Tor Browser</p>
+            <p class="descreption">Privacy-Focused Browser for Anonymity</p>
+        </a>
+    </div>
+    
+    <div class="box item13">
+        <a href="vivaldi-link" class="app" target="_blank">
+            <img src="app-icon/vivaldi.svg" alt="Vivaldi">
+            <p class="name" style="text-align: center;">Vivaldi Browser</p>
+            <p class="descreption">Highly Customizable Browser for Power Users</p>
+        </a>
+    </div>
+    
+    <div class="box item14">
+        <a href="waterfox-link" class="app" target="_blank">
+            <img src="app-icon/waterfox.svg" alt="Waterfox">
+            <p class="name" style="text-align: center;">Waterfox Browser</p>
+            <p class="descreption">High-Performance Firefox Fork</p>
+        </a>
+    </div>
+    
+    <div class="box item15">
+        <a href="slimbrowser-link" class="app" target="_blank">
+            <img src="app-icon/SlimBrowser.jpeg" alt="SlimBrowser">
+            <p class="name" style="text-align: center;">Slim Browser</p>
+            <p class="descreption">Fast and Lightweight Web Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item16">
+        <a href="midori-link" class="app" target="_blank">
+            <img src="app-icon/Midori.png" alt="Midori">
+            <p class="name" style="text-align: center;">Midori Browser</p>
+            <p class="descreption">Lightweight Browser with GTK Integration</p>
+        </a>
+    </div>
+    
+    <div class="box item17">
+        <a href="bing-link" class="app" target="_blank">
+            <img src="app-icon/bing-2.svg" alt="Bing">
+            <p class="name" style="text-align: center;">Bing Browser</p>
+            <p class="descreption">Microsoft's Search-Integrated Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item18">
+      <a href="safari-for-windows-link" class="app" target="_blank">
+          <img src="app-icon/Safari_browser_logo.svg" alt="Safari for Windows">
+          <p class="name" style="text-align: center;">Safari for Windows</p>
+          <p class="descreption">Apple's sleek and fast browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item19">
+      <a href="pale-moon-link" class="app" target="_blank">
+          <img src="app-icon/palemoon.svg" alt="Pale Moon">
+          <p class="name" style="text-align: center;">Pale Moon</p>
+          <p class="descreption">Optimized, customizable Firefox fork.</p>
+      </a>
+  </div>
+  
+  <div class="box item20">
+      <a href="epic-browser-link" class="app" target="_blank">
+          <img src="app-icon/epic_browser.png" alt="Epic Browser">
+          <p class="name" style="text-align: center;">Epic Browser</p>
+          <p class="descreption">Privacy-focused and feature-rich.</p>
+      </a>
+  </div>
+  
+  <div class="box item21">
+      <a href="avant-browser-link" class="app" target="_blank">
+          <img src="app-icon/avant_browser.png" alt="Avant Browser">
+          <p class="name" style="text-align: center;">Avant Browser</p>
+          <p class="descreption">Fast, stable, and memory-efficient.</p>
+      </a>
+  </div>
+  
+  <div class="box item22">
+      <a href="sleipnir-link" class="app" target="_blank">
+          <img src="app-icon/Sleipnir.png" alt="Sleipnir">
+          <p class="name" style="text-align: center;">Sleipnir</p>
+          <p class="descreption">Customizable and feature-packed browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item23">
+      <a href="greenbrowser-link" class="app" target="_blank">
+          <img src="app-icon/greenbrowser-logo.png" alt="GreenBrowser">
+          <p class="name" style="text-align: center;">Green Browser</p>
+          <p class="descreption">Lightweight and efficient browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item24">
+      <a href="qtweb-browser-link" class="app" target="_blank">
+          <img src="app-icon/qtweb-logo.png" alt="QTWeb Browser">
+          <p class="name" style="text-align: center;">QTWeb Browser</p>
+          <p class="descreption">Portable, secure, and efficient.</p>
+      </a>
+  </div>
+  
+  <div class="box item25">
+      <a href="slimjet-link" class="app" target="_blank">
+          <img src="app-icon/slimjet.png" alt="Slimjet">
+          <p class="name" style="text-align: center;">Slimjet</p>
+          <p class="descreption">Fast and powerful Chromium-based browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item26">
+      <a href="yandex-browser-link" class="app" target="_blank">
+          <img src="app-icon/yandex_browser.png" alt="Yandex Browser">
+          <p class="name" style="text-align: center;">Yandex Browser</p>
+          <p class="descreption">Secure and customizable Russian browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item27">
+      <a href="comodo-dragon-link" class="app" target="_blank">
+          <img src="app-icon/comodo-dragon.png" alt="Comodo Dragon">
+          <p class="name" style="text-align: center;">Comodo Dragon</p>
+          <p class="descreption">Secure Chromium-based browser by Comodo.</p>
+      </a>
+  </div>
+  
+  <div class="box item28">
+    <a href="otter-browser-link" class="app" target="_blank">
+        <img src="app-icon/Otter_Browser_Logo.svg" alt="Otter Browser">
+        <p class="name" style="text-align: center;">Otter Browser</p>
+        <p class="descreption">Classic Opera-inspired browser.</p>
+    </a>
+</div>
+  
+  <div class="box item29">
+      <a href="dooble-link" class="app" target="_blank">
+          <img src="app-icon/dooble-logo.jpg" alt="Dooble">
+          <p class="name" style="text-align: center;">Dooble</p>
+          <p class="descreption">Secure and open-source web browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item30">
+      <a href="qutebrowser-link" class="app" target="_blank">
+          <img src="app-icon/Qutebrowser.svg" alt="Qutebrowser">
+          <p class="name" style="text-align: center;">Qute browser</p>
+          <p class="descreption">Keyboard-driven browser with Vim keybindings.</p>
+      </a>
+  </div>
+  
+  <div class="box item31">
+      <a href="iridium-browser-link" class="app" target="_blank">
+          <img src="app-icon/iridium.svg" alt="Iridium Browser">
+          <p class="name" style="text-align: center;">Iridium Browser</p>
+          <p class="descreption">Privacy-focused Chromium alternative.</p>
+      </a>
+  </div>
+  
+  <div class="box item32">
+      <a href="falkon-link" class="app" target="_blank">
+          <img src="app-icon/Falkon.svg" alt="Falkon">
+          <p class="name" style="text-align: center;">Falkon</p>
+          <p class="descreption">Cross-platform, lightweight browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item33">
+      <a href="citrio-browser-link" class="app" target="_blank">
+          <img src="app-icon/Citrio_logo.png" alt="Citrio Browser">
+          <p class="name" style="text-align: center;">Citrio Browser</p>
+          <p class="descreption">Fast and lightweight browser with built-in tools.</p>
+      </a>
+  </div>
+  
+  <div class="box item34">
+      <a href="netsurf-link" class="app" target="_blank">
+          <img src="app-icon/NetSurf-logo.svg" alt="NetSurf">
+          <p class="name" style="text-align: center;">NetSurf</p>
+          <p class="descreption">Lightweight and portable web browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item35">
+      <a href="basilisk-browser-link" class="app" target="_blank">
+          <img src="app-icon/basilisk.svg" alt="Basilisk Browser">
+          <p class="name" style="text-align: center;">Basilisk Browser</p>
+          <p class="descreption">Open-source XUL-based web browser.</p>
+      </a>
+  </div>
+  
+  <div class="box item36">
+      <a href="whale-browser-link" class="app" target="_blank">
+          <img src="app-icon/whale.png" alt="Whale Browser">
+          <p class="name" style="text-align: center;">Whale Browser</p>
+          <p class="descreption">Web browser with unique sidebar features.</p>
+      </a>
+  </div>
+  <div class="box item37">
+    <a href="blisk-browser-link" class="app" target="_blank">
+        <img src="app-icon/Blisk-logo.png" alt="Blisk Browser">
+        <p class="name" style="text-align: center;">Blisk Browser</p>
+        <p class="descreption">Browser for web development and testing.</p>
+    </a>
+</div>
+
+<div class="box item38">
+    <a href="torch-browser-link" class="app" target="_blank">
+        <img src="app-icon/Torch_Browser_Logo.jpg" alt="Torch Browser">
+        <p class="name" style="text-align: center;">Torch Browser</p>
+        <p class="descreption">All-in-one web browser with built-in tools.</p>
+    </a>
+</div>
+
+<div class="box item39">
+    <a href="cyberfox-link" class="app" target="_blank">
+        <img src="app-icon/cyberfox.png" alt="Cyberfox">
+        <p class="name" style="text-align: center;">Cyberfox</p>
+        <p class="descreption">Optimized Firefox-based browser.</p>
+    </a>
+</div>
+<div class="box item40">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/cliqz.png" alt="Cliqz Browser">
+      <p class="name" style="text-align: center;">Cliqz Browser</p>
+      <p class="descreption">Privacy-focused browser with built-in search.</p>
+  </a>
+</div>
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/Opera_GX_Icon.svg" alt="Opera GX">
+      <p class="name" style="text-align: center;">Opera GX</p>
+      <p class="descreption">Opera GX is a free and advanced web browser specifically designed for gamers.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/geckoview.svg" alt="geckoview">
+      <p class="name" style="text-align: center;">Geckoview</p>
+      <p class="descreption">Opera GX is a free and advanced web browser specifically designed for gamers.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/bezillabrowser.svg" alt="bezillabrowser">
+      <p class="name" style="text-align: center;">Bezilla browser</p>
+      <p class="descreption">Opera GX is a free and advanced web browser specifically designed for gamers.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/epic_browser.png" alt="epiphany">
+      <p class="name" style="text-align: center;">Epiphany</p>
+      <p class="descreption">Opera GX is a free and advanced web browser specifically designed for gamers.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/v8-orinoco.svg" alt="v8-orinoco">
+      <p class="name" style="text-align: center;">v8-orinoco</p>
+      <p class="descreption">orinoco is the garbage collector in the V8 JavaScript engine. It manages memory for browsers and NodeJS. 
+</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/firefox-lite.svg" alt="firefox-lite">
+      <p class="name" style="text-align: center;">firefox-lite</p>
+      <p class="descreption">Firefox Lite, optimized for mobile devices, combines speed and efficiency with a range of essential features, making it an ideal choice for users seeking a lightweight browsing experience.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/rekonq.svg" alt="rekonq">
+      <p class="name" style="text-align: center;">Rekonq</p>
+      <p class="descreption">Rekonq browser, known for its lightweight design and integration with KDE Plasma, provides a streamlined and efficient web browsing experience.</p>
+  </a>
+</div>
+
+<div class="box item41">
+  <a href="cliqz-browser-link" class="app" target="_blank">
+      <img src="app-icon/iceweasel.svg" alt="iceweasel">
+      <p class="name" style="text-align: center;">Iceweasel </p>
+      <p class="descreption">Iceweasel, a fork of Mozilla Firefox, offers a versatile browsing experience with enhanced privacy features.</p>
+  </a>
+</div>
+
+
+</div> 
+   </div>
+
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="menu-assets/menu-script.js"></script>
+</div>
+</body>
+
+</html>

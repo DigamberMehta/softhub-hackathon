@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- 
+
+    <nav class="nav-bar">
+        
+        <div class="logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <h1>SoftHubCenter</h1>
+  
+  
+        <div>
+          <ul class="nav-logo">
+            <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+            <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+            <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+          </ul>
+        </div>
+      </nav>
+ -->
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1 class="heading" style="font-family:Arial, Helvetica, sans-serif">Sign In</h1>
+        <div class="box">
+            <div class="main">
+                <!-- Google Sign In with image inside the button -->
+                <button class="auto-signin google" onclick="animateButton(this)">
+                    <img src="images/google.svg" alt="Google Icon" class="auto-signin-icon">
+                    Sign in with Google
+                </button>
+
+                <!-- Facebook Sign In with image inside the button -->
+                <button class="auto-signin facebook" onclick="animateButton(this)">
+                    <img src="images/facebook.svg" alt="Facebook Icon" class="auto-signin-icon">
+                    Sign in with Facebook
+                </button>
+
+                <div class="divider"></div>
+
+                <form action="" class="details">
+                    <label for="username">Email:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <button type="submit" onclick="animateButton(this)">Sign In</button>
+                </form>
+
+                <div class="other-options">
+                    <a href="New account/index.html" class="create-account">Create an account</a>
+                    <a href="/forget password/index.html" class="forgot-password">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function animateButton(button) {
+            button.classList.add('button-clicked');
+            setTimeout(() => {
+                button.classList.remove('button-clicked');
+            }, 300); // Adjust the duration to match the transition duration
+        }
+    </script>
+</body>
+</html>

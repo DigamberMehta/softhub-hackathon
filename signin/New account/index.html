@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style-create-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Create Account</h1>
+        <div class="box">
+            <div class="main">
+                <!-- Google Sign Up with image inside the button -->
+                <button class="auto-signin google" onclick="animateButton(this)">
+                    <img src="images/google.svg" alt="Google Icon" class="auto-signin-icon">
+                    Sign up with Google
+                </button>
+
+                <!-- Facebook Sign Up with image inside the button -->
+                <button class="auto-signin facebook" onclick="animateButton(this)">
+                    <img src="images/facebook.svg" alt="Facebook Icon" class="auto-signin-icon">
+                    Sign up with Facebook
+                </button>
+
+                <div class="divider"></div>
+
+                <form action="" class="details">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="newUsername">Email:</label>
+                    <input type="text" id="newUsername" name="newUsername" placeholder="Enter your email">
+
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Enter your password">
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+
+                    <button type="submit" onclick="animateButton(this)">Create Account</button>
+                </form>
+
+                <div class="other-options">
+                    <a href="../sign-in.html" class="sign-in">Already have an account? Sign in</a>
+                    <a href="../forget password/index.html" class="forgot-password">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function animateButton(button) {
+            button.classList.add('button-clicked');
+            setTimeout(() => {
+                button.classList.remove('button-clicked');
+            }, 300); // Adjust the duration to match the transition duration
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85">
+  <title>GAMES</title>
+
+  <!-- Link Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="menu-assets/menu-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Add this line in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="big-box">
+    <div class="preloader">
+      <img src="images/preloader.gif" alt="Loading...">
+    </div>
+    <div class="lake">
+      <div class="sidebar">
+        <div class="logo_details">
+          <div class="logo_name">Softhub</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+  
+  
+          <li class="heading-link">
+            <span class="link_name" style="color: black;">
+              <i class="bx"></i> <!-- Initial blank icon element -->
+              <span class="platform-text">Platform</span> <!-- Platform text -->
+            </span>
+          </li>
+  
+  
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-windows"></i>
+              <span class="link_name">Windows</span>
+            </a>
+  
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-android"></i>
+              <span class="link_name">Android</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+              <span class="link_name">Apple</span>
+            </a>
+  
+          </li>
+  
+          <hr>
+  
+          <li class="heading-link">
+            <a href="#">
+              <span class="link_name" style="color: black;">Application</span>
+            </a>
+          </li>
+   
+          <li>
+            <a href="#">
+              <i class='bx bxs-game'></i>
+              <span class="link_name">Game</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="link_name">Shield</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">utilities</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-video'></i>
+              <span class="link_name">Video</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-music'></i>
+              <span class="link_name">Music</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-shield-plus'></i>
+              <span class="link_name">Anti Virus</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxl-chrome'></i>
+              <span class="link_name">Chrome</span>
+            </a>
+          </li>
+  
+          <hr>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+  
+          </li>
+  
+        </ul>
+      </div>
+      <section class="home-section centered-zone">
+        <nav class="nav-bar">
+          <div class="hamburger">
+            <i class="bx bx-menu" id="hamburger-btn"></i>
+          </div>
+  
+  
+  
+  
+          <div class="logo">
+            <img src="images/traillogo.png" alt="">
+          </div>
+  
+  
+          <div class="search">
+            <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div>
+  
+            <ul class="platform-logo">
+              <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+            </ul>
+          </div>
+  
+          <div class="sign-in">
+            <a href="../../signin/sign-in.html" target="_blank" class="">
+              <button class="signin-button">Sign In</button>
+            </a>
+          </div>
+          <div class="open-search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </div>     
+        </nav>
+  
+        <nav class="secondary-nav">
+          <div class="new-search-container">
+            <div class="new-search-text-area">
+              <input type="text" placeholder="New Search..." id="new-search-input">
+            </div>
+            <div id="new-search-icon">
+              <button type="button"><i class="fa fa-search"></i></button>
+         </div>
+         <div id="new-close-search">
+          <button type="button" id="close-search">cancel</button>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+
+    <!-- <div class="banner">
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+
+    </div> -->
+
+   <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="app-icon/avant_browser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/bing-2.svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/chrome.svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  -->
+
+    <div class="main">
+    <div class="Container">
+      <a href="">
+        <h1 class="heading" style="cursor: default;">GAMES</h1>
+      </a>
+    </div>
+
+    <div class="download-list">
+
+      <div class="box item1">
+        <a href="chrome-link" class="app" target="_blank">
+            <img src="app-icon/witcher.png" alt="CHROME">
+            <p class="name" style="text-align: center;">The Witcher 3: Wild Hunt</p>
+            <p class="descreption">An epic open-world RPG with rich storytelling and breathtaking visuals.</p>
+        </a>
+    </div>
+    
+    <div class="box item2">
+        <a href="firefox-link" class="app" target="_blank">
+            <img src="app-icon/red.svg" alt="firefox">
+            <p class="name" style="text-align: center;">Red Dead Redemption 2 </p>
+            <p class="descreption">Immerse yourself in the Wild West with stunning graphics and a captivating narrative.</p>
+        </a>
+    </div>
+    
+    <div class="box item3">
+        <a href="brave-link" class="app" target="_blank">
+            <img src="app-icon/gta.png" alt="brave">
+            <p class="name" style="text-align: center;">Grand Theft Auto V</p>
+            <p class="descreption">Explore the sprawling cityscape of Los Santos in this action-packed crime adventure.</p>
+        </a>
+    </div>
+    
+    <div class="box item4">
+        <a href="chromium-link" class="app" target="_blank">
+            <img src="app-icon/dar.png" alt="Chromium">
+            <p class="name" style="text-align: center;">Dark Souls III</p>
+            <p class="descreption">Prepare to die in this challenging and atmospheric action RPG.</p>
+        </a>
+    </div>
+    
+    <div class="box item5">
+        <a href="ie-link" class="app" target="_blank">
+            <img src="app-icon/doom.png" alt="Internet Explorer">
+            <p class="name" style="text-align: center;">Internet ExplorerDOOM Eternal</p>
+            <p class="descreption">Legacy Microsoft Web Browser</p>
+        </a>
+    </div>
+    
+    <div class="box item6">
+        <a href="k-meleon-link" class="app" target="_blank">
+            <img src="app-icon/se.png" alt="K-Meleon">
+            <p class="name" style="text-align: center;">Sekiro: Shadows Die Twice</p>
+            <p class="descreption">Sekiro: Shadows Die Twice</p>
+        </a>
+    </div>
+    
+    <div class="box item7">
+        <a href="gnome-link" class="app" target="_blank">
+            <img src="app-icon/di.png" alt="GNOME">
+            <p class="name" style="text-align: center;">Divinity: Original Sin 2 </p>
+            <p class="descreption">Embark on a deep and immersive fantasy RPG adventure with friends.</p>
+        </a>
+    </div>
+    
+    <div class="box item8">
+        <a href="maxthon-link" class="app" target="_blank">
+            <img src="app-icon/mas.png" alt="Maxthon">
+            <p class="name" style="text-align: center;">Mass Effect 2 </p>
+            <p class="descreption">ead a team of diverse characters on a mission to save the galaxy in this acclaimed sci-fi RPG.</p>
+        </a>
+    </div>
+    
+    <div class="box item9">
+        <a href="uc-browser-link" class="app" target="_blank">
+            <img src="app-icon/ha.png" alt="UC Browser">
+            <p class="name" style="text-align: center;">Half-Life: Alyx</p>
+            <p class="descreption">Experience the next level of VR gaming with this groundbreaking first-person shooter.</p>
+        </a>
+    </div>
+    
+    <div class="box item10">
+        <a href="opera-link" class="app" target="_blank">
+            <img src="app-icon/el.png" alt="Opera">
+            <p class="name" style="text-align: center;">The Elder Scrolls V: Skyrim</p>
+            <p class="descreption">Embark on an epic journey through a vast open world filled with dragons and adventure.</p>
+        </a>
+    </div>
+    
+    <div class="box item11">
+        <a href="konqueror-link" class="app" target="_blank">
+            <img src="app-icon/portal.png" alt="Konqueror">
+            <p class="name" style="text-align: center;">Portal 2</p>
+            <p class="descreption">Solve mind-bending puzzles using your wits and a portal gun in this innovative first-person puzzler.</p>
+        </a>
+    </div>
+    
+    <div class="box item12">
+        <a href="tor-link" class="app" target="_blank">
+            <img src="app-icon/tor.png" alt="Tor">
+            <p class="name" style="text-align: center;">Tor</p>
+            <p class="descreption">Privacy-Focused game for Anonymity</p>
+        </a>
+    </div>
+    
+    <div class="box item13">
+        <a href="vivaldi-link" class="app" target="_blank">
+            <img src="app-icon/vi.png" alt="Vivaldi">
+            <p class="name" style="text-align: center;">Civilization VI </p>
+            <p class="descreption">Build and lead your civilization to greatness in this addictive turn-based strategy game.</p>
+        </a>
+    </div>
+    
+    <div class="box item14">
+        <a href="waterfox-link" class="app" target="_blank">
+            <img src="app-icon/star.png" alt="Waterfox">
+            <p class="name" style="text-align: center;">Stardew Valley</p>
+            <p class="descreption"> Escape to the countryside and build your own farm in this charming indie simulation game.</p>
+        </a>
+    </div>
+    
+    <div class="box item15">
+        <a href="slimbrowser-link" class="app" target="_blank">
+            <img src="app-icon/hollow.png" alt="SlimBrowser">
+            <p class="name" style="text-align: center;">Hollow Knight</p>
+            <p class="descreption">Explore a beautifully hand-drawn world filled with challenging enemies and intricate secrets.</p>
+        </a>
+    </div>
+    
+    <div class="box item16">
+        <a href="midori-link" class="app" target="_blank">
+            <img src="app-icon/cel.png" alt="Midori">
+            <p class="name" style="text-align: center;">Celeste</p>
+            <p class="descreption">Climb a treacherous mountain while overcoming personal struggles in this heartfelt platformer.</p>
+        </a>
+    </div>
+    
+    <div class="box item17">
+        <a href="bing-link" class="app" target="_blank">
+            <img src="app-icon/over.png" alt="Bing">
+            <p class="name" style="text-align: center;">Overwatch </p>
+            <p class="descreption">Team up and battle in a diverse cast of heroes in this fast-paced multiplayer shooter.</p>
+        </a>
+    </div>
+    
+    <div class="box item18">
+      <a href="safari-for-windows-link" class="app" target="_blank">
+          <img src="app-icon/zel.png" alt="Safari for Windows">
+          <p class="name" style="text-align: center;">The Legend of Zelda: Breath of the Wild</p>
+          <p class="descreption">Discover a vast open world filled with exploration and adventure.</p>
+      </a>
+  </div>
+  
+  <div class="box item19">
+      <a href="pale-moon-link" class="app" target="_blank">
+          <img src="app-icon/diso.png" alt="Pale Moon">
+          <p class="name" style="text-align: center;">Disco Elysium</p>
+          <p class="descreption">Immerse yourself in a deeply narrative-driven RPG with a unique blend of detective work and role-playing.</p>
+      </a>
+  </div>
+  
+  <div class="box item20">
+      <a href="epic-browser-link" class="app" target="_blank">
+          <img src="app-icon/outer.png" alt="Epic Browser">
+          <p class="name" style="text-align: center;">Outer Wilds</p>
+          <p class="descreption">Unravel the mysteries of a miniature solar system trapped in a time loop in this captivating exploration game.</p>
+      </a>
+  </div>
+  
+  <div class="box item21">
+      <a href="avant-browser-link" class="app" target="_blank">
+          <img src="app-icon/min.png" alt="Avant Browser">
+          <p class="name" style="text-align: center;">Minecraft </p>
+          <p class="descreption">Build, explore, and survive in an endless world of blocks and creativity.</p>
+      </a>
+  </div>
+  
+  <div class="box item22">
+      <a href="sleipnir-link" class="app" target="_blank">
+          <img src="app-icon/res.png" alt="Sleipnir">
+          <p class="name" style="text-align: center;">Resident Evil 2 (2019)</p>
+          <p class="descreption">Experience survival horror at its finest in this stunning remake of a classic game.</p>
+      </a>
+  </div>
+  
+  <div class="box item23">
+      <a href="greenbrowser-link" class="app" target="_blank">
+          <img src="app-icon/fact.png" alt="GreenBrowser">
+          <p class="name" style="text-align: center;">Factorio</p>
+          <p class="descreption">Design and automate your own sprawling industrial complex in this addictive management sim.</p>
+      </a>
+  </div>
+  
+  <div class="box item24">
+      <a href="qtweb-browser-link" class="app" target="_blank">
+          <img src="app-icon/com.png" alt="QTWeb Browser">
+          <p class="name" style="text-align: center;">XCOM 2</p>
+          <p class="descreption">Lead a squad of soldiers against an alien invasion in this challenging turn-based strategy game.</p>
+      </a>
+  </div>
+  
+  <div class="box item25">
+      <a href="slimjet-link" class="app" target="_blank">
+          <img src="app-icon/control.png" alt="Slimjet">
+          <p class="name" style="text-align: center;">Control</p>
+          <p class="descreption">Harness supernatural powers and unravel the mysteries of a secretive government agency in this mind-bending action-adventure.</p>
+      </a>
+  </div>
+  
+  <div class="box item26">
+      <a href="yandex-browser-link" class="app" target="_blank">
+          <img src="app-icon/nier.png" alt="Yandex Browser">
+          <p class="name" style="text-align: center;">Nier: Automata </p>
+          <p class="descreption">Dive into a thought-provoking narrative and intense combat in this action RPG.</p>
+      </a>
+  </div>
+  
+  <div class="box item27">
+      <a href="comodo-dragon-link" class="app" target="_blank">
+          <img src="app-icon/rain.png" alt="Comodo Dragon">
+          <p class="name" style="text-align: center;">Rainbow Six Siege</p>
+          <p class="descreption">Engage in tactical multiplayer battles with destructible environments and intense teamwork.</p>
+      </a>
+  </div>
+  
+  <div class="box item28">
+    <a href="otter-browser-link" class="app" target="_blank">
+        <img src="app-icon/space.png" alt="Otter Browser">
+        <p class="name" style="text-align: center;">The Outer Worlds</p>
+        <p class="descreption">Explore a quirky and satirical sci-fi universe in this RPG from the creators of Fallout: New Vegas.</p>
+    </a>
+</div>
+  
+  <div class="box item29">
+      <a href="dooble-link" class="app" target="_blank">
+          <img src="app-icon/cup.png" alt="Dooble">
+          <p class="name" style="text-align: center;">Cuphead</p>
+          <p class="descreption">Test your skills in this challenging run-and-gun platformer with stunning 1930s-style animation.</p>
+      </a>
+  </div>
+  
+  <div class="box item30">
+      <a href="qutebrowser-link" class="app" target="_blank">
+          <img src="app-icon/bay.png" alt="Qutebrowser">
+          <p class="name" style="text-align: center;">Bayonetta</p>
+          <p class="descreption">Unleash stylish combos and powerful attacks as the witch Bayonetta in this action-packed spectacle fighter.</p>
+      </a>
+  </div>
+  
+  <div class="box item31">
+      <a href="iridium-browser-link" class="app" target="_blank">
+          <img src="app-icon/brand.png" alt="Iridium Browser">
+          <p class="name" style="text-align: center;">Total War: Warhammer II</p>
+          <p class="descreption"> epic battles and conquer a fantasy world filled with legendary creatures and races.</p>
+      </a>
+  </div>
+  
+  <div class="box item32">
+      <a href="falkon-link" class="app" target="_blank">
+          <img src="app-icon/border.png" alt="Falkon">
+          <p class="name" style="text-align: center;">Borderlands 3</p>
+          <p class="descreption">Shoot and loot your way through a cel-shaded world filled with humor and mayhem.</p>
+      </a>
+  </div>
+  
+  <div class="box item33">
+      <a href="citrio-browser-link" class="app" target="_blank">
+          <img src="app-icon/v.png" alt="Citrio Browser">
+          <p class="name" style="text-align: center;">Civilization V</p>
+          <p class="descreption">Lead your civilization from the dawn of time to the space age in this classic turn-based strategy game.</p>
+      </a>
+  </div>
+  
+  <div class="box item34">
+      <a href="netsurf-link" class="app" target="_blank">
+          <img src="app-icon/dis.png" alt="NetSurf">
+          <p class="name" style="text-align: center;">Dishonored 2</p>
+          <p class="descreption">Choose your playstyle and unravel a conspiracy in this immersive stealth-action game.</p>
+      </a>
+  </div>
+  
+  <div class="box item35">
+      <a href="basilisk-browser-link" class="app" target="_blank">
+          <img src="app-icon/ass.png" alt="Basilisk Browser">
+          <p class="name" style="text-align: center;">Assassin's Creed Odyssey</p>
+          <p class="descreption">Embark on an epic odyssey through ancient Greece in this sprawling action RPG.</p>
+      </a>
+  </div>
+  
+  <div class="box item36">
+      <a href="whale-browser-link" class="app" target="_blank">
+          <img src="app-icon/destiny.png" alt="Whale Browser">
+          <p class="name" style="text-align: center;">Destiny 2</p>
+          <p class="descreption">Join millions of players in this online multiplayer shooter set in a rich science fiction universe.</p>
+      </a>
+  </div>
+  
+
+
+</div> 
+   </div>
+
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="menu-assets/menu-script.js"></script>
+</div>
+</body>
+
+</html>

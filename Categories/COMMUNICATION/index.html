@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85">
+  <title>COMMUNICATION</title>
+
+  <!-- Link Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="menu-assets/menu-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Add this line in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="big-box">
+    <div class="preloader">
+      <img src="images/preloader.gif" alt="Loading...">
+    </div>
+    <div class="lake">
+      <div class="sidebar">
+        <div class="logo_details">
+          <div class="logo_name">Softhub</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+  
+  
+          <li class="heading-link">
+            <span class="link_name" style="color: black;">
+              <i class="bx"></i> <!-- Initial blank icon element -->
+              <span class="platform-text">Platform</span> <!-- Platform text -->
+            </span>
+          </li>
+  
+  
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-windows"></i>
+              <span class="link_name">Windows</span>
+            </a>
+  
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-android"></i>
+              <span class="link_name">Android</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+              <span class="link_name">Apple</span>
+            </a>
+  
+          </li>
+  
+          <hr>
+  
+          <li class="heading-link">
+            <a href="#">
+              <span class="link_name" style="color: black;">Application</span>
+            </a>
+          </li>
+   
+          <li>
+            <a href="#">
+              <i class='bx bxs-game'></i>
+              <span class="link_name">Game</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="link_name">Shield</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">utilities</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-video'></i>
+              <span class="link_name">Video</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-music'></i>
+              <span class="link_name">Music</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-shield-plus'></i>
+              <span class="link_name">Anti Virus</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxl-chrome'></i>
+              <span class="link_name">Chrome</span>
+            </a>
+          </li>
+  
+          <hr>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+  
+          </li>
+  
+        </ul>
+      </div>
+      <section class="home-section centered-zone">
+        <nav class="nav-bar">
+          <div class="hamburger">
+            <i class="bx bx-menu" id="hamburger-btn"></i>
+          </div>
+  
+  
+  
+  
+          <div class="logo">
+            <img src="images/traillogo.png" alt="">
+          </div>
+  
+  
+          <div class="search">
+            <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div>
+  
+            <ul class="platform-logo">
+              <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+            </ul>
+          </div>
+  
+          <div class="sign-in">
+            <a href="../../signin/sign-in.html" target="_blank" class="">
+              <button class="signin-button">Sign In</button>
+            </a>
+          </div>
+          <div class="open-search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </div>     
+        </nav>
+  
+        <nav class="secondary-nav">
+          <div class="new-search-container">
+            <div class="new-search-text-area">
+              <input type="text" placeholder="New Search..." id="new-search-input">
+            </div>
+            <div id="new-search-icon">
+              <button type="button"><i class="fa fa-search"></i></button>
+         </div>
+         <div id="new-close-search">
+          <button type="button" id="close-search">cancel</button>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+
+    <!-- <div class="banner">
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+
+    </div> -->
+
+   <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="app-icon/avant_browser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/bing-2.svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/chrome.svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  -->
+
+    <div class="main">
+    <div class="Container">
+      <a href="">
+        <h1 class="heading" style="cursor: default;">COMMUNICATION</h1>
+      </a>
+    </div>
+
+    <div class="download-list">
+
+      <div class="box item1">
+          <a href="chrome-link" class="app" target="_blank">
+              <img src="app-icon/WhatsApp.svg" alt="CHROME">
+              <p class="name" style="text-align: center;">WhatsApp</p>
+              <p class="descreption">Connect with friends and family through instant messaging.</p>
+          </a>
+      </div>
+      
+      <div class="box item2">
+          <a href="firefox-link" class="app" target="_blank">
+              <img src="app-icon/Facebook.svg" alt="firefox">
+              <p class="name" style="text-align: center;">Facebook</p>
+              <p class="descreption">Stay updated and connected with your social network.</p>
+          </a>
+      </div>
+      
+      <div class="box item3">
+          <a href="brave-link" class="app" target="_blank">
+              <img src="app-icon/Instagram.svg" alt="brave">
+              <p class="name" style="text-align: center;">Instagram</p>
+              <p class="descreption">Share your life's moments through photos and videos.</p>
+          </a>
+      </div>
+      
+      <div class="box item4">
+          <a href="chromium-link" class="app" target="_blank">
+              <img src="app-icon/Twitter.svg" alt="Chromium">
+              <p class="name" style="text-align: center;">Twitter</p>
+              <p class="descreption">Join the global conversation and express yourself.</p>
+          </a>
+      </div>
+      
+      <div class="box item5">
+          <a href="ie-link" class="app" target="_blank">
+              <img src="app-icon/snapchat.svg" alt="Internet Explorer">
+              <p class="name" style="text-align: center;">Snapchat</p>
+              <p class="descreption">Share moments with friends through disappearing photos and videos.</p>
+          </a>
+      </div>
+      
+      <div class="box item6">
+          <a href="k-meleon-link" class="app" target="_blank">
+              <img src="app-icon/discord.svg" alt="K-Meleon">
+              <p class="name" style="text-align: center;">Discord</p>
+              <p class="descreption">Communicate and collaborate with communities and friends.</p>
+          </a>
+      </div>
+      
+      <div class="box item7">
+          <a href="gnome-link" class="app" target="_blank">
+              <img src="app-icon/Skype.svg" alt="GNOME">
+              <p class="name" style="text-align: center;">Skype</p>
+              <p class="descreption">Make video and voice calls, and chat with friends and family.</p>
+          </a>
+      </div>
+      
+      <div class="box item8">
+          <a href="maxthon-link" class="app" target="_blank">
+              <img src="app-icon/telegram.svg" alt="Maxthon">
+              <p class="name" style="text-align: center;">Telegram</p>
+              <p class="descreption">Fast, secure, and powerful messaging app with a focus on privacy.</p>
+          </a>
+      </div>
+      
+      <div class="box item9">
+          <a href="uc-browser-link" class="app" target="_blank">
+              <img src="app-icon/LinkedIn.svg" alt="UC Browser">
+              <p class="name" style="text-align: center;">LinkedIn</p>
+              <p class="descreption">Build professional connections and explore career opportunities.</p>
+          </a>
+      </div>
+      
+      <div class="box item10">
+          <a href="opera-link" class="app" target="_blank">
+              <img src="app-icon/tiktok.svg" alt="Opera">
+              <p class="name" style="text-align: center;">TikTok</p>
+              <p class="descreption">Discover and create short videos to share with the world.</p>
+          </a>
+      </div>
+      
+      <div class="box item11">
+          <a href="konqueror-link" class="app" target="_blank">
+              <img src="app-icon/pinterest.svg" alt="Konqueror">
+              <p class="name" style="text-align: center;">Pinterest</p>
+              <p class="descreption">Discover ideas and inspiration for every aspect of your life.</p>
+          </a>
+      </div>
+      
+      <div class="box item12">
+          <a href="tor-link" class="app" target="_blank">
+              <img src="app-icon/Vibe.svg" alt="Tor">
+              <p class="name" style="text-align: center;">Viber</p>
+              <p class="descreption">Make free calls, send messages, and share photos and videos with friends.</p>
+          </a>
+      </div>
+      
+      <div class="box item13">
+          <a href="vivaldi-link" class="app" target="_blank">
+              <img src="app-icon/whatsapp-business.webp" alt="Vivaldi">
+              <p class="name" style="text-align: center;">WhatsApp Business</p>
+              <p class="descreption">Connect with customers and grow your business.</p>
+          </a>
+      </div>
+      
+      <div class="box item14">
+          <a href="waterfox-link" class="app" target="_blank">
+              <img src="app-icon/wechat.png" alt="Waterfox">
+              <p class="name" style="text-align: center;">WeChat</p>
+              <p class="descreption">Connect with friends and family, and explore more possibilities.</p>
+          </a>
+      </div>
+      
+      <div class="box item15">
+          <a href="slimbrowser-link" class="app" target="_blank">
+              <img src="app-icon/LINE_logo.svg" alt="SlimBrowser">
+              <p class="name" style="text-align: center;">LINE</p>
+              <p class="descreption">Stay in touch with your friends and family with free voice and video calls.</p>
+          </a>
+      </div>
+      
+      <div class="box item16">
+          <a href="midori-link" class="app" target="_blank">
+              <img src="app-icon/Zoom.svg" alt="Midori">
+              <p class="name" style="text-align: center;">Zoom</p>
+              <p class="descreption">Stay connected wherever you are with video conferencing and messaging.</p>
+          </a>
+      </div>
+      
+      <div class="box item17">
+          <a href="bing-link" class="app" target="_blank">
+              <img src="app-icon/Google_Meet.svg" alt="Bing">
+              <p class="name" style="text-align: center;">Google Meet</p>
+              <p class="descreption">Connect and collaborate with colleagues and clients through video meetings.</p>
+          </a>
+      </div>
+      
+      <div class="box item18">
+        <a href="safari-for-windows-link" class="app" target="_blank">
+            <img src="app-icon/Signal.svg" alt="Safari for Windows">
+            <p class="name" style="text-align: center;">Signal</p>
+            <p class="descreption">Send high-quality group, text, voice, video, document, and picture messages.</p>
+        </a>
+      </div>
+      
+      <div class="box item19">
+        <a href="pale-moon-link" class="app" target="_blank">
+            <img src="app-icon/snapchats.svg" alt="Pale Moon">
+            <p class="name" style="text-align: center;">Snapchat</p>
+            <p class="descreption">Share moments with friends through disappearing photos and videos.</p>
+        </a>
+      </div>
+
+      <div class="box item20">
+        <a href="discord-alternative-link" class="app" target="_blank">
+            <img src="app-icon/Facebook_Messenger.svg" alt="Alternative Discord">
+            <p class="name" style="text-align: center;">Facebook Messsenger</p>
+            <p class="descreption">A new way to communicate and collaborate with friends and communities.</p>
+        </a>
+    </div>
+    
+    <div class="box item21">
+        <a href="rocket-chat-link" class="app" target="_blank">
+            <img src="app-icon/rocket-chat.svg" alt="Rocket.Chat">
+            <p class="name" style="text-align: center;">Rocket.Chat</p>
+            <p class="descreption">An open-source team communication platform.</p>
+        </a>
+    </div>
+    
+    <div class="box item22">
+        <a href="zulip-link" class="app" target="_blank">
+            <img src="app-icon/Zulip-.svg" alt="Zulip">
+            <p class="name" style="text-align: center;">Zulip</p>
+            <p class="descreption">A powerful open-source team chat software.</p>
+        </a>
+    </div>
+    
+    <div class="box item23">
+        <a href="tox-link" class="app" target="_blank">
+            <img src="app-icon/tox-svgrepo-com.svg" alt="Tox">
+            <p class="name" style="text-align: center;">Tox</p>
+            <p class="descreption">A peer-to-peer instant messaging protocol with end-to-end encryption.</p>
+        </a>
+    </div>
+    
+    <div class="box item24">
+        <a href="mumble-link" class="app" target="_blank">
+            <img src="app-icon/mumble.svg" alt="Mumble">
+            <p class="name" style="text-align: center;">Mumble</p>
+            <p class="descreption">A free, open-source, low-latency voice chat software.</p>
+        </a>
+    </div>
+    
+    <div class="box item25">
+        <a href="riot-im-link" class="app" target="_blank">
+            <img src="app-icon/riot-chat.svg" alt="Riot.im">
+            <p class="name" style="text-align: center;">Riot.im</p>
+            <p class="descreption">A secure collaboration and messaging app.</p>
+        </a>
+    </div>
+    
+    <div class="box item26">
+        <a href="jami-link" class="app" target="_blank">
+            <img src="app-icon/jami.svg" alt="Jami">
+            <p class="name" style="text-align: center;">Jami</p>
+            <p class="descreption">A distributed communication platform built for privacy.</p>
+        </a>
+    </div>
+    
+    <div class="box item27">
+        <a href="wire-link" class="app" target="_blank">
+            <img src="app-icon/wire-icon.svg" alt="Wire">
+            <p class="name" style="text-align: center;">Wire</p>
+            <p class="descreption">A secure and private messenger for business and personal use.</p>
+        </a>
+    </div>
+    
+    <div class="box item28">
+        <a href="mattermost-link" class="app" target="_blank">
+            <img src="app-icon/mattermost4.png" alt="Mattermost">
+            <p class="name" style="text-align: center;">Mattermost</p>
+            <p class="descreption">An open-source, self-hosted Slack alternative.</p>
+        </a>
+    </div>
+    
+    <div class="box item29">
+        <a href="signal-alternative-link" class="app" target="_blank">
+            <img src="app-icon/Signal.svg" alt="Alternative Signal">
+            <p class="name" style="text-align: center;">Hangout</p>
+            <p class="descreption">A privacy-focused messaging app with encrypted communication.</p>
+        </a>
+    </div>
+    
+    <div class="box item30">
+        <a href="keybase-link" class="app" target="_blank">
+            <img src="app-icon/Keybase.svg" alt="Keybase">
+            <p class="name" style="text-align: center;">Keybase</p>
+            <p class="descreption">A secure messaging and file-sharing platform.</p>
+        </a>
+    </div>
+    <div class="box item30">
+        <a href="keybase-link" class="app" target="_blank">
+            <img src="app-icon/tinder.svg" alt="Keybase">
+            <p class="name" style="text-align: center;">Tinder</p>
+            <p class="descreption">Tinder is an online dating and geosocial networking application</p>
+        </a>
+    </div>
+    
+</div> 
+   </div>
+
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="menu-assets/menu-script.js"></script>
+</div>
+</body>
+
+</html>

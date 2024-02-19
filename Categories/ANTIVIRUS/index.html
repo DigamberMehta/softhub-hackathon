@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85">
+  <title>ANTI-VIRUS</title>
+
+  <!-- Link Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="menu-assets/menu-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Add this line in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="big-box">
+    <div class="preloader">
+      <img src="images/preloader.gif" alt="Loading...">
+    </div>
+    <div class="lake">
+      <div class="sidebar">
+        <div class="logo_details">
+          <div class="logo_name">Softhub</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+  
+  
+          <li class="heading-link">
+            <span class="link_name" style="color: black;">
+              <i class="bx"></i> <!-- Initial blank icon element -->
+              <span class="platform-text">Platform</span> <!-- Platform text -->
+            </span>
+          </li>
+  
+  
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-windows"></i>
+              <span class="link_name">Windows</span>
+            </a>
+  
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-android"></i>
+              <span class="link_name">Android</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+              <span class="link_name">Apple</span>
+            </a>
+  
+          </li>
+  
+          <hr>
+  
+          <li class="heading-link">
+            <a href="#">
+              <span class="link_name" style="color: black;">Application</span>
+            </a>
+          </li>
+   
+          <li>
+            <a href="#">
+              <i class='bx bxs-game'></i>
+              <span class="link_name">Game</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="link_name">Shield</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">utilities</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-video'></i>
+              <span class="link_name">Video</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bx-music'></i>
+              <span class="link_name">Music</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxs-shield-plus'></i>
+              <span class="link_name">Anti Virus</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <i class='bx bxl-chrome'></i>
+              <span class="link_name">Chrome</span>
+            </a>
+          </li>
+  
+          <hr>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+  
+          </li>
+  
+        </ul>
+      </div>
+      <section class="home-section centered-zone">
+        <nav class="nav-bar">
+          <div class="hamburger">
+            <i class="bx bx-menu" id="hamburger-btn"></i>
+          </div>
+  
+  
+  
+  
+          <div class="logo">
+            <img src="images/traillogo.png" alt="">
+          </div>
+  
+  
+          <div class="search">
+            <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div>
+  
+            <ul class="platform-logo">
+              <li><a href=""><img src="images/windows.svg" alt="windows" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/apple.svg" alt="MacOS" height="40" width="40"></a></li>
+              <li><a href=""><img src="images/android.svg" alt="Android" height="40" width="40"></a></li>
+            </ul>
+          </div>
+  
+          <div class="sign-in">
+            <a href="../../signin/sign-in.html" target="_blank" class="">
+              <button class="signin-button">Sign In</button>
+            </a>
+          </div>
+          <div class="open-search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </div>     
+        </nav>
+  
+        <nav class="secondary-nav">
+          <div class="new-search-container">
+            <div class="new-search-text-area">
+              <input type="text" placeholder="New Search..." id="new-search-input">
+            </div>
+            <div id="new-search-icon">
+              <button type="button"><i class="fa fa-search"></i></button>
+         </div>
+         <div id="new-close-search">
+          <button type="button" id="close-search">cancel</button>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+
+    <!-- <div class="banner">
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+
+    </div> -->
+
+   <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="app-icon/avant_browser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/bing-2.svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="app-icon/chrome.svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  -->
+
+    <div class="main">
+    <div class="Container">
+      <a href="">
+        <h1 class="heading" style="cursor: default;">ANTI-VIRUS</h1>
+      </a>
+    </div>
+
+    <div class="download-list">
+
+      <div class="box item1">
+        <a href="chrome-link" class="app" target="_blank">
+            <img src="app-icon/norton.svg" alt="CHROME">
+            <p class="name" style="text-align: center;">Norton 360</p>
+            <p class="descreption">Comprehensive security suite.</p>
+        </a>
+    </div>
+    
+    <div class="box item2">
+        <a href="firefox-link" class="app" target="_blank">
+            <img src="app-icon/McAfee.svg" alt="firefox">
+            <p class="name" style="text-align: center;">McAfee Total Protection</p>
+            <p class="descreption">All-round protection for devices.</p>
+        </a>
+    </div>
+    
+    <div class="box item3">
+        <a href="brave-link" class="app" target="_blank">
+            <img src="app-icon/bitdefender-antivirus.png" alt="brave">
+            <p class="name" style="text-align: center;">Bitdefender Antivirus Plus</p>
+            <p class="descreption">Strong antivirus with minimal impact.</p>
+        </a>
+    </div>
+    
+    <div class="box item4">
+        <a href="chromium-link" class="app" target="_blank">
+            <img src="app-icon/Kaspersky_Internet_Security.svg" alt="Chromium">
+            <p class="name" style="text-align: center;">Kaspersky Internet Security</p>
+            <p class="descreption">Robust internet security suite.</p>
+        </a>
+    </div>
+    
+    <div class="box item5">
+        <a href="ie-link" class="app" target="_blank">
+            <img src="app-icon/Avast_Software.svg" alt="Internet Explorer">
+            <p class="name" style="text-align: center;">Avast Free Antivirus</p>
+            <p class="descreption">Free antivirus with solid protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item6">
+        <a href="k-meleon-link" class="app" target="_blank">
+            <img src="app-icon/AVG_Similar.svg" alt="K-Meleon">
+            <p class="name" style="text-align: center;">AVG Antivirus Free</p>
+            <p class="descreption">Basic antivirus for everyday use.</p>
+        </a>
+    </div>
+    
+    <div class="box item7">
+        <a href="gnome-link" class="app" target="_blank">
+            <img src="app-icon/Trend_Micro_logo.svg" alt="GNOME">
+            <p class="name" style="text-align: center;">Trend Micro Antivirus+ Security</p>
+            <p class="descreption">Effective virus protection software.</p>
+        </a>
+    </div>
+    
+    <div class="box item8">
+        <a href="maxthon-link" class="app" target="_blank">
+            <img src="app-icon/AVG_Similar.svg" alt="Maxthon">
+            <p class="name" style="text-align: center;">Avira Antivirus Pro</p>
+            <p class="descreption">Pro-level security features included.</p>
+        </a>
+    </div>
+    
+    <div class="box item9">
+        <a href="uc-browser-link" class="app" target="_blank">
+            <img src="app-icon/sophos.svg" alt="UC Browser">
+            <p class="name" style="text-align: center;">Sophos Home Premium</p>
+            <p class="descreption">Advanced home cybersecurity solution.</p>
+        </a>
+    </div>
+    
+    <div class="box item10">
+        <a href="opera-link" class="app" target="_blank">
+            <img src="app-icon/ESET_logo.svg" alt="Opera">
+            <p class="name" style="text-align: center;">ESET NOD32 Antivirus</p>
+            <p class="descreption">Fast and lightweight antivirus.</p>
+        </a>
+    </div>
+    
+    <div class="box item11">
+        <a href="konqueror-link" class="app" target="_blank">
+            <img src="app-icon/Malwarebytes_Logo.svg" alt="Konqueror">
+            <p class="name" style="text-align: center;">Malwarebytes Premium</p>
+            <p class="descreption">Anti-malware with real-time protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item12">
+        <a href="tor-link" class="app" target="_blank">
+            <img src="app-icon/windows-defender.svg" alt="Tor">
+            <p class="name" style="text-align: center;">Windows Defender</p>
+            <p class="descreption">Built-in security for Windows.</p>
+        </a>
+    </div>
+    
+    <div class="box item13">
+        <a href="vivaldi-link" class="app" target="_blank">
+            <img src="app-icon/bull guard.png" alt="Vivaldi">
+            <p class="name" style="text-align: center;">BullGuard Antivirus</p>
+            <p class="descreption">Powerful antivirus with gaming mode.</p>
+        </a>
+    </div>
+    
+    <div class="box item14">
+        <a href="waterfox-link" class="app" target="_blank">
+            <img src="app-icon/vipre.png" alt="Waterfox">
+            <p class="name" style="text-align: center;">VIPRE Advanced Security</p>
+            <p class="descreption">Advanced threat detection capabilities.</p>
+        </a>
+    </div>
+    
+    <div class="box item15">
+        <a href="slimbrowser-link" class="app" target="_blank">
+            <img src="app-icon/panda-dome-2.svg" alt="SlimBrowser">
+            <p class="name" style="text-align: center;">Panda Dome Essential</p>
+            <p class="descreption">Essential protection with cloud-based scanning.</p>
+        </a>
+    </div>
+    
+    <div class="box item16">
+        <a href="midori-link" class="app" target="_blank">
+            <img src="app-icon/Webroot_logo.svg" alt="Midori">
+            <p class="name" style="text-align: center;">Webroot SecureAnywhere Antivirus</p>
+            <p class="descreption">Lightweight antivirus with cloud-based protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item17">
+        <a href="bing-link" class="app" target="_blank">
+            <img src="app-icon/F-Secure.svg" alt="Bing">
+            <p class="name" style="text-align: center;">F-Secure Antivirus SAFE</p>
+            <p class="descreption">Simple yet effective antivirus solution.</p>
+        </a>
+    </div>
+    
+    <div class="box item18">
+        <a href="safari-for-windows-link" class="app" target="_blank">
+            <img src="app-icon/Trend_Micro_logo.svg" alt="Safari for Windows">
+            <p class="name" style="text-align: center;">Trend Micro Maximum Security</p>
+            <p class="descreption">Comprehensive security for multiple devices.</p>
+        </a>
+    </div>
+    
+    <div class="box item19">
+        <a href="pale-moon-link" class="app" target="_blank">
+            <img src="app-icon/ESET_logo.svg" alt="Pale Moon">
+            <p class="name" style="text-align: center;">Emsisoft Anti-Malware</p>
+            <p class="descreption">Dual-engine malware scanner.</p>
+        </a>
+    </div>
+    
+    <div class="box item20">
+        <a href="epic-browser-link" class="app" target="_blank">
+            <img src="app-icon/360 total.png" alt="Epic Browser">
+            <p class="name" style="text-align: center;">360 Total Security</p>
+            <p class="descreption">All-in-one security solution suite.</p>
+        </a>
+    </div>
+      <div class="box item1">
+        <a href="chrome-link" class="app" target="_blank">
+            <img src="app-icon/norton.svg" alt="CHROME">
+            <p class="name" style="text-align: center;">Norton 360</p>
+            <p class="descreption">Comprehensive security suite.</p>
+        </a>
+    </div>
+    
+    <div class="box item2">
+        <a href="firefox-link" class="app" target="_blank">
+            <img src="app-icon/McAfee.svg" alt="firefox">
+            <p class="name" style="text-align: center;">McAfee Total Protection</p>
+            <p class="descreption">All-round protection for devices.</p>
+        </a>
+    </div>
+    
+    <div class="box item3">
+        <a href="brave-link" class="app" target="_blank">
+            <img src="app-icon/bitdefender-antivirus.png" alt="brave">
+            <p class="name" style="text-align: center;">Bitdefender Antivirus Plus</p>
+            <p class="descreption">Strong antivirus with minimal impact.</p>
+        </a>
+    </div>
+    
+    <div class="box item4">
+        <a href="chromium-link" class="app" target="_blank">
+            <img src="app-icon/Kaspersky_Internet_Security.svg" alt="Chromium">
+            <p class="name" style="text-align: center;">Kaspersky Internet Security</p>
+            <p class="descreption">Robust internet security suite.</p>
+        </a>
+    </div>
+    
+    <div class="box item5">
+        <a href="ie-link" class="app" target="_blank">
+            <img src="app-icon/Avast_Software.svg" alt="Internet Explorer">
+            <p class="name" style="text-align: center;">Avast Free Antivirus</p>
+            <p class="descreption">Free antivirus with solid protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item6">
+        <a href="k-meleon-link" class="app" target="_blank">
+            <img src="app-icon/AVG_Similar.svg" alt="K-Meleon">
+            <p class="name" style="text-align: center;">AVG Antivirus Free</p>
+            <p class="descreption">Basic antivirus for everyday use.</p>
+        </a>
+    </div>
+    
+    <div class="box item7">
+        <a href="gnome-link" class="app" target="_blank">
+            <img src="app-icon/Trend_Micro_logo.svg" alt="GNOME">
+            <p class="name" style="text-align: center;">Trend Micro Antivirus+ Security</p>
+            <p class="descreption">Effective virus protection software.</p>
+        </a>
+    </div>
+    
+    <div class="box item8">
+        <a href="maxthon-link" class="app" target="_blank">
+            <img src="app-icon/AVG_Similar.svg" alt="Maxthon">
+            <p class="name" style="text-align: center;">Avira Antivirus Pro</p>
+            <p class="descreption">Pro-level security features included.</p>
+        </a>
+    </div>
+    
+    <div class="box item9">
+        <a href="uc-browser-link" class="app" target="_blank">
+            <img src="app-icon/sophos.svg" alt="UC Browser">
+            <p class="name" style="text-align: center;">Sophos Home Premium</p>
+            <p class="descreption">Advanced home cybersecurity solution.</p>
+        </a>
+    </div>
+    
+    <div class="box item10">
+        <a href="opera-link" class="app" target="_blank">
+            <img src="app-icon/ESET_logo.svg" alt="Opera">
+            <p class="name" style="text-align: center;">ESET NOD32 Antivirus</p>
+            <p class="descreption">Fast and lightweight antivirus.</p>
+        </a>
+    </div>
+    
+    <div class="box item11">
+        <a href="konqueror-link" class="app" target="_blank">
+            <img src="app-icon/Malwarebytes_Logo.svg" alt="Konqueror">
+            <p class="name" style="text-align: center;">Malwarebytes Premium</p>
+            <p class="descreption">Anti-malware with real-time protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item12">
+        <a href="tor-link" class="app" target="_blank">
+            <img src="app-icon/windows-defender.svg" alt="Tor">
+            <p class="name" style="text-align: center;">Windows Defender</p>
+            <p class="descreption">Built-in security for Windows.</p>
+        </a>
+    </div>
+    
+    <div class="box item13">
+        <a href="vivaldi-link" class="app" target="_blank">
+            <img src="app-icon/bull guard.png" alt="Vivaldi">
+            <p class="name" style="text-align: center;">BullGuard Antivirus</p>
+            <p class="descreption">Powerful antivirus with gaming mode.</p>
+        </a>
+    </div>
+    
+    <div class="box item14">
+        <a href="waterfox-link" class="app" target="_blank">
+            <img src="app-icon/vipre.png" alt="Waterfox">
+            <p class="name" style="text-align: center;">VIPRE Advanced Security</p>
+            <p class="descreption">Advanced threat detection capabilities.</p>
+        </a>
+    </div>
+    
+    <div class="box item15">
+        <a href="slimbrowser-link" class="app" target="_blank">
+            <img src="app-icon/panda-dome-2.svg" alt="SlimBrowser">
+            <p class="name" style="text-align: center;">Panda Dome Essential</p>
+            <p class="descreption">Essential protection with cloud-based scanning.</p>
+        </a>
+    </div>
+    
+    <div class="box item16">
+        <a href="midori-link" class="app" target="_blank">
+            <img src="app-icon/Webroot_logo.svg" alt="Midori">
+            <p class="name" style="text-align: center;">Webroot SecureAnywhere Antivirus</p>
+            <p class="descreption">Lightweight antivirus with cloud-based protection.</p>
+        </a>
+    </div>
+    
+    <div class="box item17">
+        <a href="bing-link" class="app" target="_blank">
+            <img src="app-icon/F-Secure.svg" alt="Bing">
+            <p class="name" style="text-align: center;">F-Secure Antivirus SAFE</p>
+            <p class="descreption">Simple yet effective antivirus solution.</p>
+        </a>
+    </div>
+    
+    <div class="box item18">
+        <a href="safari-for-windows-link" class="app" target="_blank">
+            <img src="app-icon/Trend_Micro_logo.svg" alt="Safari for Windows">
+            <p class="name" style="text-align: center;">Trend Micro Maximum Security</p>
+            <p class="descreption">Comprehensive security for multiple devices.</p>
+        </a>
+    </div>
+    
+    <div class="box item19">
+        <a href="pale-moon-link" class="app" target="_blank">
+            <img src="app-icon/ESET_logo.svg" alt="Pale Moon">
+            <p class="name" style="text-align: center;">Emsisoft Anti-Malware</p>
+            <p class="descreption">Dual-engine malware scanner.</p>
+        </a>
+    </div>
+    
+    <div class="box item20">
+        <a href="epic-browser-link" class="app" target="_blank">
+            <img src="app-icon/360 total.png" alt="Epic Browser">
+            <p class="name" style="text-align: center;">360 Total Security</p>
+            <p class="descreption">All-in-one security solution suite.</p>
+        </a>
+    </div>
+  
+
+
+</div> 
+   </div>
+
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="menu-assets/menu-script.js"></script>
+</div>
+</body>
+
+</html>
