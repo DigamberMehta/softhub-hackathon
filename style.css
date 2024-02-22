@@ -39,8 +39,6 @@ body{
 .centered-zone {
   max-width: 1700px;
   margin: 0 auto;
-  border-left: 1px solid #cfc7c7;
-  border-right: 1px solid #cfc7c7;
   left: 38px;
 }
 
@@ -550,7 +548,10 @@ position: sticky;
 }
 
 
-
+.change-btn:active,
+  .change-btn:focus {
+    text-decoration: underline;
+  }
 
 .top-download-container {
   width: 95%;
@@ -567,10 +568,8 @@ position: sticky;
 }
 
 .top-download {
-  margin: 20px;
+  margin: 0 auto;
   width: 85%;
-  
-
 }
 
 table {
@@ -844,7 +843,12 @@ h2 {
   opacity: 1;
 }
 
-
+@media screen and (max-width: 500px) {
+  .scroll-button{
+    display: none;
+  }
+  
+}
 
 
 

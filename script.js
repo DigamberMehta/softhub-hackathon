@@ -1,12 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Set a timeout to hide the preloader after 2 seconds
-  setTimeout(function() {
-    var preloader = document.querySelector('.preloader');
-    var lake = document.querySelector('.lake');
-
-    preloader.style.display = 'none';
-    lake.style.opacity = '1'; // Show the content
-  }, 1000); // 2000 milliseconds = 2 seconds
+window.addEventListener('load', function() {
+  // When the page is fully loaded, hide the preloader and show the content
+  var preloader = document.querySelector('.preloader');
+  var content = document.getElementById('lake');
+  preloader.style.display = 'none';
+  lake.style.display = 'block';
 });
 
 
